@@ -1,4 +1,10 @@
-export default function AppLogo() {
+type AppLogoProps = {
+  title: string
+
+  rgb: string
+}
+export default function AppLogo({title,rgb} :AppLogoProps)
+{
     const subTitle = 'it suphan';
     const dateNow = new Date()
     const timeNow = <p>{dateNow.toLocaleTimeString()}</p>
@@ -6,7 +12,7 @@ export default function AppLogo() {
     const isShowDate = false
   return (
     <>
-      <p style={{color: "red"}}>My Logo</p>
+      <p style={{color: rgb}}>{title}</p>
       <small>{subTitle.toUpperCase()}</small>
       {' '}
       {
