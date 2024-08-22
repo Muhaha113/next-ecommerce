@@ -10,6 +10,8 @@ export default function Home() {
       <Link href={"../content/resume"}>Go to resume</Link>
       {'  '}<br></br>
       <Link href={"../abount"}>Go to abount</Link>
+      {'  '}<br></br>
+      <Link href={"../dashboard"}>Go to dashboard</Link>
     </main>
   );
 }
