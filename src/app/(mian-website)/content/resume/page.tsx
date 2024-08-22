@@ -1,8 +1,10 @@
 import Link from "next/link";
+import Container from "@mui/material/Container";
+
 
 export default function resumepage() {
   return (
-    <main><div style={{textAlign: "center"}}>      <h1 style ={{color: "#9f63b0"}}>My Resume</h1>
+    <Container><div style={{textAlign: "center"}}>      <h1 style ={{color: "#9f63b0"}}>My Resume</h1>
     <h2 style={{color: "#0a4d80"}}>name: Phuthit Wongthubthim<br/>
     Age: 20<br/>
     Tel: 0000000000<br/>
@@ -13,6 +15,6 @@ export default function resumepage() {
       {'  '}<br></br>
     <Link href={"../abount"}>Go to abount</Link>
       </div>
-    </main>
+    </Container>
   );
 }
